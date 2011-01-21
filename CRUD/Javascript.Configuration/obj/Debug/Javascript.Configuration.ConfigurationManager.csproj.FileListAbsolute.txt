@@ -1,0 +1,5 @@
+D:\Vipul\Project R&D\MVC3Learning\CRUD\CRUD\Javascript.Configuration\bin\Debug\Javascript.Configuration.ConfigurationManager.dll
+D:\Vipul\Project R&D\MVC3Learning\CRUD\CRUD\Javascript.Configuration\bin\Debug\Javascript.Configuration.ConfigurationManager.pdb
+D:\Vipul\Project R&D\MVC3Learning\CRUD\CRUD\Javascript.Configuration\obj\Debug\ResolveAssemblyReference.cache
+D:\Vipul\Project R&D\MVC3Learning\CRUD\CRUD\Javascript.Configuration\obj\Debug\Javascript.Configuration.ConfigurationManager.dll
+D:\Vipul\Project R&D\MVC3Learning\CRUD\CRUD\Javascript.Configuration\obj\Debug\Javascript.Configuration.ConfigurationManager.pdb

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Javascript.Configuration.ConfigurationManager.Test", "CRUD\Javascript.Configuration.ConfigurationManager.Test.csproj", "{73E47FCA-53A0-490A-A497-928DBF4C6FD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Javascript.Configuration.ConfigurationManager", "Javascript.Configuration\Javascript.Configuration.ConfigurationManager.csproj", "{EDDBFE89-B444-4504-BF20-47C605215318}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73E47FCA-53A0-490A-A497-928DBF4C6FD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73E47FCA-53A0-490A-A497-928DBF4C6FD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73E47FCA-53A0-490A-A497-928DBF4C6FD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73E47FCA-53A0-490A-A497-928DBF4C6FD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDDBFE89-B444-4504-BF20-47C605215318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDDBFE89-B444-4504-BF20-47C605215318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDDBFE89-B444-4504-BF20-47C605215318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDDBFE89-B444-4504-BF20-47C605215318}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

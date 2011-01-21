@@ -1,0 +1,68 @@
+﻿    <!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/jquery-1.4.4.min.js")" type="text/javascript"></script>
+    <!--
+        
+        Replicating configuration data and other server data (very sensitive data) at client side.
+
+        Sometimes application needs configuration( very sensitive data) at client side, so later on javascript code use those configuration data
+        and based no those data, a presentation layer is continued to execute.
+
+        Some examples are listed below;
+        1. application url (configured in web.config), need to render/change a view through javascript.
+        2. service url (configured in web.config), need to consume data at client side and later on used by presentation layer.
+        etc.
+
+        There are lots of ways to consume configuration data at client side (like save configured values in hidden fields
+        and consumed later on through those hidden fields).
+
+        Can we access "AppSettings" at client side with below syntax (same as server side syntax, so less learning is required)?
+        
+        1. var url = Javascript.Configuration.ConfigurationManager.AppSettings.AppUrl;
+        2. var url = Javascript.Configuration.ConfigurationManager.AppSettings["AppUrl"];
+
+        Using this library we can!!
+
+        [[How]]
+        1. Download "Javascript.Configuration.ConfigurationManager".
+        2. Reference it into your ASP.NET MVC project.
+        3. Add handler, please refer below code;
+            <system.web>
+                ...
+                <httpModules>
+                    <add name="jsModule" type="Javascript.JavascriptModule" />
+                </httpModules>
+                ...
+            </system.web>
+        4. Add script reference in your master page, so all the pages can use these data;
+            e.g. <script src="@Url.Content("~/Javascript/AppSettings?Keys=AppUrl,ServiceUrl")" type="text/javascript"></script>
+            Keys = how many keys need to be exposed at client side ( comma separated values).
+
+        
+
+        {{GeneratedCode}}
+        var Javascript = Javascript||{};
+        Javascript.Configuration = Javascript.Configuration||{};
+        Javascript.Configuration.ConfigurationManager = Javascript.Configuration.ConfigurationManager||{};
+        var appSettings = new Array();
+        appSettings.AppUrl="http://site1/";
+        appSettings.ServiceUrl="http://service1/test.asmx";
+        Javascript.Configuration.ConfigurationManager.AppSettings = appSettings;
+
+        {{Usage}}
+        1. var url = Javascript.Configuration.ConfigurationManager.AppSettings.AppUrl;
+        2. var url = Javascript.Configuration.ConfigurationManager.AppSettings["AppUrl"];
+
+    -->
+    <script src="@Url.Content("~/Javascript/AppSettings?Keys=AppUrl")" type="text/javascript"></script>
+    <script type="text/javascript">
+        alert(Javascript.Configuration.ConfigurationManager.AppSettings.AppUrl);
+    </script>
+</head>
+<body>
+    @RenderBody()
+</body>
+</html>
