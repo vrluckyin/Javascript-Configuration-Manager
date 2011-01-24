@@ -11,7 +11,7 @@ namespace Javascript.Configuration
     {
         public FileStreamResult AppSettings()
         {
-            string keys = Request.QueryString["Keys"];
+            string keys = System.Configuration.ConfigurationManager.AppSettings["jsConfig"];
             string js = ConfigurationManager.AppSettings(keys);
             MemoryStream ms = new MemoryStream(System.Text.ASCIIEncoding.ASCII.GetBytes(js), true);
             return new FileStreamResult(ms, "text/plain");
